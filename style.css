@@ -1,36 +1,52 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
+  height: 80vh;
+  margin-left: 1rem;
+  border: 0;
+  padding: 0;
+  /* start font code */
+  font-family: 'Dekko', cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: antiquewhite;
+  /* end font code */
+}
+
+* {
+  box-sizing: border-box;
+}
 
 header {
-    border: .25rem solid rgb(0, 85, 255);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    /* align-content: center; */
+  border: 0.25rem solid rgb(0, 85, 255);
+  display: grid;
+  justify-content: center;
+  height: 20vh;
+  /* margin: 0; */
+  /* align-content: center; */
+  /* align-items: center; */
+  background-color: rgb(215, 193, 163);
 }
-h1{
-    border: .25rem solid blue;
-    text-align: center;
-    font-size: 3rem;
+h1 {
+  border: 0.25rem solid blue;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
 }
 nav {
-    border: .25rem solid rgb(136, 0, 255);
-    display: flex;
-    align-content: center;
-    /* align-items: center; */
+  border: 0.25rem solid rgb(136, 0, 255);
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  /* align-items: center; */
 }
 
 nav > a {
-    margin: .5rem;
-    font-size: 1.5rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
 }
 
 main {
-    border: .25rem solid rgb(247, 0, 255);
+  border: 0.25rem solid rgb(247, 0, 255);
+}
+.headshot {
+  height: 40vh;
 }
