@@ -89,6 +89,7 @@ main {
   margin-top: var(--headheight);
   width: 80%;
   margin-left: 10vw;
+  margin-right: 10vw;
 }
 /* front page popout image */
 .person {
@@ -139,14 +140,16 @@ main {
   left: 5.5rem;
 }
 main > h1 {
-  position: absolute;
+  position: relative;
   font-size: 4rem;
   border: 0.25rem solid #15151553;
   border-radius: 0.75rem;
   padding: 0.5rem;
   background-color: #301b3fd8;
+  max-width: fit-content;
+  margin: auto;
   bottom: 25rem;
-  right: 24vw;
+  left: 20vw;
 }
 h2 {
   border-radius: 0.75rem;
@@ -156,7 +159,7 @@ h2 {
   max-height: 7rem;
   text-align: center;
   font-size: xx-large;
-  padding-inline: 10rem;
+  /* padding-inline: 10rem; */
   margin: 0.75rem;
   grid-column: 1 / span 2;
   align-self: center;
@@ -182,21 +185,6 @@ h2 {
 .card::before {
   opacity: 0.2;
   z-index: -1;
-}
-h3 {
-  border-radius: 0.75rem;
-  background-color: #301b3f;
-  padding: 0.75rem;
-  min-width: fit-content;
-  max-height: 7rem;
-  text-align: center;
-  font-size: x-large;
-  text-decoration: underline;
-  padding-inline: 10rem;
-  margin: 0.75rem;
-  grid-column: 1 / span 2;
-  align-self: center;
-  font-weight: bold;
 }
 .card > a > img {
   position: relative;
@@ -236,4 +224,44 @@ footer {
   border-bottom: none;
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+/* start photo carousel */
+.gallery {
+  padding-block: 1rem;
+  display: grid;
+  margin-inline: 0.8rem;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  overflow: scroll;
+  height: 46vh;
+  scroll-snap-type: both mandatory;
+  scroll-padding: 1rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.active {
+  scroll-snap-type: unset;
+}
+li {
+  scroll-snap-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 0;
+}
+li > img {
+  max-height: 40vh;
+  border-radius: 0.75rem;
+}
+.carousel {
+  border: 0.025rem solid #301b3f;
+  border-radius: 0.75rem;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #3c415cad;
+}
+.carousel > h2 {
+  margin: auto;
+  max-width: fit-content;
 }
