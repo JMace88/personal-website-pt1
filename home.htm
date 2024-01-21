@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <!-- link for font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,37 +18,40 @@
   </head>
   <body>
     <header>
-      <h1>Josh Mace</h1>
+      <div>
+        <h2 class="logo">
+          <a href="https://github.com/JMace88">
+          JM
+        </a>
+      </h2>
+      </div>
+      <!-- <h1>Josh Mace</h1> -->
       <nav>
-        <a href="about.htm">About Me</a>
-        <a href="portfolio.htm">My Portfolio</a>
+        <button>
+          <a href="about.htm">About Me</a>
+        </button>
+        <button>
+          <a href="portfolio.htm">My Portfolio</a>
+        </button>
       </nav>
     </header>
 
     <main>
-      <img
-        class="headshot"
-        src="" alt="picture for home"
-      />
-      
-
-      <article>
-        <h2>Something for the homepage</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-          recusandae laboriosam, eos facilis voluptatibus nemo similique facere
-          suscipit, quia quis iste consequatur labore rerum vero iure quae illo
-          amet veniam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          delectus, sapiente eveniet dicta nemo nesciunt voluptas expedita
-          molestiae excepturi quia cum ea ipsa id magnam velit, iusto fugit a
-          alias?
-        </p>
-      </article>
+      <div class="person">
+        <h1 class="frontjosh">Josh Mace </h1>
+        <div class="person__container">
+          <img class="person__circle"
+          src="images/moon-png-44668.png"/>
+          <img
+            class="person__img"
+            src="images/with yuki no background.png"
+            alt="picture for home"
+          />
+        </div>
+        
+      </div>
+      <h1 class="yuki">and Yuki!</h1>
     </main>
     <footer></footer>
   </body>
-  
 </html>
